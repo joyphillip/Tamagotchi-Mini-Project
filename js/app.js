@@ -3,7 +3,7 @@
 // Create a Class (look at your notes on JS Classes if you forgot) for your Tamagotchi
 
 class Tamagotchi {
-    constructor (name, hunger = 1, sleepiness = 1, boredom = 1, age) {
+    constructor (name = "Fred", hunger = 1, sleepiness = 1, boredom = 1, age) {
         this.name = name;
         this.hunger = hunger;
         this.sleepiness = sleepiness;
@@ -34,3 +34,6 @@ class Tamagotchi {
         alert(`Happy Birthday, ${this.name} is 1 year older!`)
     }
     }
+
+    let tamagotchi = new Tamagotchi()
+    console.log(tamagotchi.name)
