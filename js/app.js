@@ -64,12 +64,11 @@ document.querySelector(".button1").addEventListener('click', function() {
 // Increase your pet's age every x minutes
 //Age
 setInterval( function(){
-    // pet.age +=1
+    pet.age +=1
     document.getElementById('age').innerText = `Age: ${pet.age}`
 }, 4000)
 if( pet.age == 7) {
-    stopStatsInterval()
-    clearInterval(ageStat)
+    clearInterval(pet.age)
     alert(`Nice job! ${pet.name} has gotten older! `)
 }
 // //create variables outside of functions to set start and stop of stats
@@ -101,6 +100,7 @@ setInterval( function(){
     pet.hunger += 1;
     document.getElementById('hunger').innerText = `Hunger: ${pet.hunger}`
     if( pet.hunger >= 10){
+        clearInterval( pet.hunger)
         alert(`${pet.name} has died of hunger. GAME OVER!`);
     } 
 }, 4000);
@@ -110,6 +110,7 @@ setInterval( function(){
     pet.sleepiness += 1;
     document.getElementById('sleepy').innerText = `Sleepiness: ${pet.sleepiness}`
     if( pet.sleepiness >= 10){
+        clearInterval(pet.sleepiness)
         alert(`${pet.name} has died of lack of sleep. GAME OVER!`);
     } 
 }, 4000);
@@ -119,6 +120,7 @@ setInterval( function(){
     pet.boredom += 1;
     document.getElementById('bored').innerText = `Boredom: ${pet.boredom}`
     if( pet.boredom >= 10){
+        clearInterval(pet.boredom)
         alert(`${pet.name} has died of boredom. GAME OVER!`);
     } 
 }, 4000);
