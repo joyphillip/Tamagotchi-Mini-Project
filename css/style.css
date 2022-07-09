@@ -26,6 +26,12 @@ body {
 .button3 {background-color: aqua; border-radius: 8px;}
 .button4 {background-color: pink; border-radius: 8px;}
 
+#little-crab {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50;
+}
 
 /* #home {
     background: url('../imgs/small\ crab.gif') 0 0;
