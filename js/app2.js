@@ -104,7 +104,7 @@
 // // Increase your pet's Hunger, Sleepiness, and Bored metrics on an interval of your choosing.
 // //Your pet should die if Hunger, Boredom, or Sleepiness hits 10.
 
-// // Increase Hunger
+// // // Increase Hunger
 // setInterval( function(){
 //     tamagotchi.hunger += 1;
 //     if( tamagotchi.hunger >= 10){

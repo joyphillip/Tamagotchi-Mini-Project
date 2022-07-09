@@ -1,5 +1,6 @@
 h1 {
     color: navy;
+    font-family: 'Knewave', cursive;
 }
 
 #button-container {
@@ -8,6 +9,7 @@ h1 {
     justify-content: space-evenly;
     font-size: 16px ;
     padding: 12px 28px;
+    border-radius: 16px;
 
 }
 
@@ -21,11 +23,17 @@ body {
       
 }
 
-.button1 {background-color: green; color: white; border-radius: 8px;}
-.button2 {background-color: yellow; border-radius: 8px;}
-.button3 {background-color: aqua; border-radius: 8px;}
-.button4 {background-color: pink; border-radius: 8px;}
+.button1 {background-color: green; color: white; border-radius: 8px; padding: 14px 40px;}
+.button2 {background-color: yellow; border-radius: 8px; padding: 14px 40px;}
+.button3 {background-color: aqua; border-radius: 8px; padding: 14px 40px;}
+.button4 {background-color: pink; border-radius: 8px; padding: 14px 40px;}
 
+.child {
+    transition: transfrom 1s;
+}
+.parent :hover .child {
+    transform: translateX(100%);
+}
 #little-crab {
     display: block;
     margin-left: auto;
@@ -33,12 +41,14 @@ body {
     width: 50;
 }
 
-/* #home {
-    background: url('../imgs/small\ crab.gif') 0 0;
-    display: flex;
-    float: center;
-    width: 46px;
-    height: 44px;
-} */
 
+.newTama {
+    text-align: center;
+}
+
+.stats {
+    text-align: center;
+    font-size: 25px;
+
+}
 
