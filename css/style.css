@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Knewave&family=Press+Start+2P&family=Splash&display=swap');
+
 h1 {
     color: navy;
-    font-family: 'Knewave', cursive;
+    font-family: 'Press Start 2P', cursive;
+    font: 12x;
 }
 
 #button-container {
@@ -14,7 +17,7 @@ h1 {
 }
 
 body {
-    background-image: url('../imgs/beach-daytime.webp');
+    background-image: url(../imgs/beach-daytime.webp);
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
@@ -39,6 +42,15 @@ body {
     margin-left: auto;
     margin-right: auto;
     width: 50;
+    animation-name: move;
+    animation-duration: 10s;
+}
+
+@keyframes move {
+    from{transform: translateX(0)}
+    to{transform: translateX(200px);}
+    from{transform: translateX(200px)}
+    to{transform: translateX(0);}
 }
 
 
