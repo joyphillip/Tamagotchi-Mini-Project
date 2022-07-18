@@ -46,6 +46,7 @@ body {
     animation-duration: 10s;
 }
 
+
 @keyframes move {
     from{transform: translateX(0)}
     to{transform: translateX(200px);}
@@ -61,6 +62,11 @@ body {
 .stats {
     text-align: center;
     font-size: 25px;
+}
 
+span {
+    font-size: small;
+    color: navy;
+    font-family: 'Press Start 2P', cursive;
 }
 
