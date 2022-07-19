@@ -60,7 +60,7 @@ setInterval( function(){
         alert(`Nice job! ${pet.name} has gotten older! `)
         
     }
-}, 1000)
+}, 3000)
 
 
 
@@ -72,7 +72,7 @@ setInterval( function(){
         clearInterval( pet.hunger)
         alert(`${pet.name} has died of hunger. GAME OVER!`);
     } 
-}, 1000);
+}, 4000);
 
 //sleep
 setInterval( function(){
@@ -82,7 +82,7 @@ setInterval( function(){
         clearInterval(pet.sleepiness)
         alert(`${pet.name} has died of lack of sleep. GAME OVER!`);
     } 
-}, 1000);
+}, 4500);
 
 //play
 setInterval( function(){
@@ -92,7 +92,7 @@ setInterval( function(){
         clearInterval(pet.boredom)
         alert(`${pet.name} has died of boredom. GAME OVER!`);
     } 
-}, 1000);
+}, 5000);
 }
 
 //Buttons
